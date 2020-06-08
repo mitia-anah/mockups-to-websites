@@ -25,3 +25,12 @@
 #section_more_news .category a {
   color: #FA6980;
 }
+
+/* ==== Tablet === */
+@media (min-width: 768px) {
+  #section_more_news > header {
+    padding-block-end: 0;
+    border-bottom: 2px solid #EBEDED;
+    margin-block-end: 0;
+  }
+}
