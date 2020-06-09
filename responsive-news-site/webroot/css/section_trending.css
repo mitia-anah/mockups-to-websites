@@ -1,3 +1,31 @@
 #section_trending article {
   background-color: #fff;
 }
+
+
+/* ==== Tablet === */
+@media (min-width: 768px) {
+  #section_trending {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "header header header"
+    "article1 article2 article3";
+    column-gap: 4rem;
+    padding-inline-start: 5rem;
+  }
+
+  #section_trending > header {
+    grid-area: header;
+    padding-inline-end: 4rem;
+  }
+  #section_trending > article:nth-of-type(1) {
+    grid-area: article1;
+  }
+  #section_trending > article:nth-of-type(2) {
+    grid-area: article2;
+  }
+  #section_trending > article:nth-of-type(2) ~ article {
+    display: none;
+  }
+}
