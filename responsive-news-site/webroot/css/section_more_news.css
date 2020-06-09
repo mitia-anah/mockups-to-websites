@@ -28,9 +28,24 @@
 
 /* ==== Tablet === */
 @media (min-width: 768px) {
+  #section_more_news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "header header"
+    "article1 article2";
+    column-gap: 6rem;
+    padding-inline-start: 5rem;
+    padding-inline-end: 5rem;
+  }
+
   #section_more_news > header {
-    padding-block-end: 0;
-    border-bottom: 2px solid #EBEDED;
-    margin-block-end: 0;
+    grid-area: header;
+  }
+  #section_more_news > article:nth-of-type(1) {
+    grid-area: article1;
+  }
+  #section_more_news > article:nth-of-type(2) {
+    grid-area: article2;
   }
 }
