@@ -55,15 +55,18 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     "header header header"
-    "article1 article1 article2"
-    "article3 article3 article4"
-    " article5";
+    "article1 article1 article3"
+    "article1 article1 article3 "
+    "article1 article1 article4 "
+    "article2 article2 article4"
+    "article2 article2 article5"
+    "article2 article2 article5";
   }
-  /* #section_happening_now > article:nth-of-type(3),
+  #section_happening_now > article:nth-of-type(3),
+   #section_happening_now > article:nth-of-type(5),
   #section_happening_now > article:nth-of-type(4) {
     height: 50%;
-    display: flex;
-  } */
+  }
 
   #section_happening_now > header {
     grid-area: header;
@@ -85,9 +88,9 @@
   #section_happening_now > article:nth-of-type(5) {
     grid-area: article5;
   }
-  /* #section_happening_now > article:nth-of-type(4) ~ article {
+ #section_happening_now > article:nth-of-type(4) ~ article {
     display: flex;
-  }*/
+  }
 }
 
 
