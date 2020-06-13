@@ -50,4 +50,10 @@
   }
 }
 
-/*=== Desktop ===
+/*=== Desktop ===*/
+@media (min-width: 1000px) {
+#section_more_news{
+display: block;
+
+}
+}
