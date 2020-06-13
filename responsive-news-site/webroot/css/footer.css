@@ -90,3 +90,7 @@ body > footer a {
     order: 3;
   }
 }
+
+@media (min-width: 1000px) {
+
+}
