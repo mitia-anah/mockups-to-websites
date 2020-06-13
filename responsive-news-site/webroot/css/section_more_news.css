@@ -35,8 +35,6 @@
     "header header"
     "article1 article2";
     column-gap: 3rem;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
   }
 
   #section_more_news > header {
@@ -48,12 +46,14 @@
   #section_more_news > article:nth-of-type(2) {
     grid-area: article2;
   }
+
 }
 
 /*=== Desktop ===*/
 @media (min-width: 1000px) {
 #section_more_news{
 display: block;
-
+/* margin-inline-start: -4rem; */
+/* padding-inline-start: 8rem; */
 }
 }
