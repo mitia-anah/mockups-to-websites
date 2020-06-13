@@ -22,3 +22,25 @@
 #section_featured footer {
   display: none;
 }
+
+/* ====Desktop===*/
+@media (min-width:1000px) {
+#section_featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+#section_featured .heading_section {
+  padding-block-start: 6rem;
+}
+#section_featured .heading_section,
+#section_featured p,
+#section_featured .article_title{
+    margin-inline-start: 8rem;
+}
+#section_featured .button {
+  margin-block-end: 12rem;
+}
+
+}

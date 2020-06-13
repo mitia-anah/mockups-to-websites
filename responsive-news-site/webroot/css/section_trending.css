@@ -28,4 +28,37 @@
   #section_trending > article:nth-of-type(2) ~ article {
     display: none;
   }
+  #section_trending article{
+    height: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+  #section_trending > article:nth-of-type(2) ~ article {
+    display: block;
+
+  }
+  #section_trending {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "header header header"
+    "article1 article2 article3";
+    column-gap: 2rem;
+    padding-inline-start: 5rem;
+  }
+  #section_trending > header {
+    grid-area: header;
+    padding-inline-end: 4rem;
+  }
+  #section_trending > article:nth-of-type(1) {
+    grid-area: article1;
+  }
+  #section_trending > article:nth-of-type(2) {
+    grid-area: article2;
+  }
+#section_trending > article:nth-of-type(3) {
+  grid-area: article3;
+}
+
 }
