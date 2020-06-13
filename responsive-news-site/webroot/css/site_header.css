@@ -52,3 +52,9 @@ body > header > p > a > span {
     padding: 1.25rem;
   }
 }
+/*===Desktop===*/
+@media (min-width: 1000px) {
+#section_featured > .article_card {
+ height: 100%;
+}
+}
