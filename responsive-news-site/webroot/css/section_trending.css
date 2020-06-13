@@ -35,7 +35,7 @@
 
 @media (min-width: 1000px) {
   #section_trending > article:nth-of-type(2) ~ article {
-    display: block;
+    display: flex;
 
   }
   #section_trending {
@@ -46,6 +46,7 @@
     "article1 article2 article3";
     column-gap: 2rem;
     padding-inline-start: 5rem;
+    margin-block-end: -20rem;
   }
   #section_trending > header {
     grid-area: header;
