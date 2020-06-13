@@ -25,8 +25,6 @@
     "article1 article1"
     "article2 article2"
     "article3 article4";
-   margin-inline-start: auto;
-   margin-inline-end: auto;
   }
 
   #section_happening_now > header {
@@ -49,13 +47,47 @@
   #section_happening_now > article:nth-of-type(4) ~ article {
     display: none;
   }
-
-  #section_happening_now > header {
-    padding-block-end: 0;
-  }
-
 }
 
+@media (min-width: 1000px) {
+#section_happening_now {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "header header header"
+    "article1 article1 article2"
+    "article3 article3 article4"
+    " article5";
+  }
+  /* #section_happening_now > article:nth-of-type(3),
+  #section_happening_now > article:nth-of-type(4) {
+    height: 50%;
+    display: flex;
+  } */
 
+  #section_happening_now > header {
+    grid-area: header;
+  }
+  #section_happening_now > article:nth-of-type(1) {
+    grid-area: article1;
+  }
+  #section_happening_now > article:nth-of-type(2) {
+    grid-area: article2;
+  }
+
+  #section_happening_now > article:nth-of-type(3) {
+    grid-area: article3;
+  }
+
+  #section_happening_now > article:nth-of-type(4) {
+    grid-area: article4;
+  }
+  #section_happening_now > article:nth-of-type(5) {
+    grid-area: article5;
+  }
+  /* #section_happening_now > article:nth-of-type(4) ~ article {
+    display: flex;
+  }*/
+}
 
 
