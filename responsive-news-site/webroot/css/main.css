@@ -1,3 +1,30 @@
 main {
   padding: 0;
 }
+
+@media (min-width: 1000px){
+main {
+display: grid;
+column-gap: 0;
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas:
+            "section1 section1 section2"
+            "section3 section3 section3"
+            "section4 section4 section4";
+}
+}
+
+main section:nth-of-type(1) {
+  grid-area: section1;
+}
+main section:nth-of-type(2) {
+  grid-area: section2;
+  padding-inline-start: 5rem;
+}
+main section:nth-of-type(3) {
+  grid-area: section3;
+}
+
+main section:nth-of-type(4) {
+  grid-area: section4;
+}
