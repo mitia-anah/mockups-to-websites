@@ -2,12 +2,25 @@
   font-family: "myRoboto";
   font-style: normal;
   font-weight: 400;
-  src: local('roboto'), local('roboto-regular');
+  src: local('roboto regular'), local('roboto-regular');
+  src: url(/responsive-news-site/webroot/fonts/roboto-regular.woff2),
+  url(/responsive-news-site/webroot/fonts/roboto-regular.woff);
 }
 
 @font-face {
   font-family: "myRoboto";
   font-style: normal;
   font-weight: 700;
-  src: local('roboto'), local('roboto-bold');
+  src: local('roboto bold'), local('roboto-bold');
+  src: url(/responsive-news-site/webroot/fonts/roboto-bold.woff2),
+  url(/responsive-news-site/webroot/fonts/roboto-bold.woff);
+}
+
+@font-face {
+  font-family: "myRoboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local('roboto lightItalic'), local('roboto-lightItalic');
+  src: url(/responsive-news-site/webroot/fonts/roboto-bold.woff2),
+  url(/responsive-news-site/webroot/fonts/roboto-bold.woff);
 }
