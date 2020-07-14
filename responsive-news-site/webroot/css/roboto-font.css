@@ -1,13 +1,13 @@
 @font-face {
-  font-family: Roboto;
+  font-family: "myRoboto";
   font-style: normal;
   font-weight: 400;
-  src: local(Roboto);
+  src: local('roboto'), local('roboto-regular');
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: "myRoboto";
   font-style: normal;
   font-weight: 700;
-  src: local(roboto-bold)
+  src: local('roboto'), local('roboto-bold');
 }
